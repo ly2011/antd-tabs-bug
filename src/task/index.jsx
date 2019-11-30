@@ -17,7 +17,7 @@ class TabTable extends React.Component {
     return (
       <Tabs defaultActiveKey="1">
         {tabs.map(item => (
-          <TabPane tab={item.title} key={item.id}>
+          <TabPane tab={item.title} key={item.id} forceRender>
             {item.children}
           </TabPane>
         ))}
